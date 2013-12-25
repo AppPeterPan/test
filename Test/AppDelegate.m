@@ -7,12 +7,16 @@
 //
 
 #import "AppDelegate.h"
+#import "SSZipArchive.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    [SSZipArchive createZipFileAtPath:nil withContentsOfDirectory:nil];
+
     return YES;
 }
 							
